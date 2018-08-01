@@ -15,10 +15,10 @@ double div(double x, double y)
 int main() {
 	int a, b;
 	cin >> a >> b;
-	cout << add(a,b)<<endl;
-	cout << sub(a,b)<<endl;
-	cout << mul(a,b)<<endl;
-	cout << div(a,b)<<endl;
+	cout << add(a,b) << endl;
+	cout << sub(a,b) << endl;
+	cout << mul(a,b) << endl;
+	cout << div(a,b) << endl;
 
 
 
