@@ -8,7 +8,7 @@ double mul(double x, double y)
 int main() {
 	
 
-
+	int i;
 
 
 }
