@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 double mul(double x, double y)
 {
 
