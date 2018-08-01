@@ -12,9 +12,20 @@ double div(double x, double y)
 	return x / y;
 }
 
+double add(double x, double y)
+{
+	return x + y;
+}
 
+void readMe()
+{
+	printf("1st DP git Test pjt");
+}
 
 int main() {
+	
+	readMe(); // Yong
+
 	int a, b;
 	cin >> a >> b;
 	cout << add(a,b)<<endl;
