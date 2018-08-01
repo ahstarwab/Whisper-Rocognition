@@ -1,10 +1,9 @@
 #include <iostream>
-#include "stdafx.h"
 using namespace std;
 double mul1(double x, double y)
 {
 
-	return x * y; // return°ª = x*y
+	return x * y; 
 
 }
 
