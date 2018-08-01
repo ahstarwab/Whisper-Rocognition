@@ -7,10 +7,18 @@ double mul(double x, double y)
 
 }
 
+
 double div(double x, double y)
 {
 	return x / y;
 }
+
+
+double sub(double x, double y)
+{
+	return x - y;
+}
+
 
 double add(double x, double y)
 {
