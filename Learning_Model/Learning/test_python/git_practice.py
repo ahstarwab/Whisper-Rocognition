@@ -22,11 +22,13 @@ def div(a,b):
     return a/b
 
 # 이하 sub(a, b) function 자리
-
+def sub(a,b):
+	return a-b
 
 
 # 이하 add(a, b) function 자리
-
+def add(a,b):
+	return a+b	
 
 
 # 이하 main code
