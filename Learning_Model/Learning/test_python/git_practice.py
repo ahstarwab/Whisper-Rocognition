@@ -1,10 +1,10 @@
 """
 	remote repository 생성 및 main code - 용혁
 
-	mul(a, b) - 재빈
+	mul(a, b) - 의협
 	div(a, b) - 의협
 	sub(a, b) - 다운
-	add(a, b) - 재빈
+	add(a, b) - 다운
 	
 	위 func을 담당자가  정의해주세요
 	conflict를 최대한 방지하기 위해, 함수 별 영역 지정을 하겠습니다.
