@@ -13,11 +13,13 @@
 
 # 이하 mul(a, b) function 자리
 
-
+def mul(a,b):
+    return a*b
 
 # 이하 div(a, b) function 자리
 
-
+def div(a,b):
+    return a/b
 
 # 이하 sub(a, b) function 자리
 
