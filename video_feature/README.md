@@ -11,29 +11,9 @@ Contain all the packages and environment configurations that need to be set befo
 I highly recommend you run the script mannually line by line to avoid any error
 You must run the script in the right order to avoid dependency problem
 
-
-# Data Processing
-This part contains all files related with data processing procedure.
-
-Executables:
-## data_processing.sh
-A end-to-end pipeline that process the raw videos and generate video features. The end file will be videoFeatures.tar.gz
-Argument: N/A
-
-### ./video/downloadVideo.sh
-Automatically download the raw video and unzip them
-Argument: N/A
-
-### ./audio/downloadAudio.sh
-Automatically download the raw audio and unzip them
-
-### cleanVideo.py
-Remove video that has no corresponding audio
-Argument: N/A
-
-### cutSilence.sh
-Match onset and duration of video with audio
-Argument: N/A
+## demo_run.sh
+A end-to-end pipeline that process the raw videos and generate video features. The end file will be videoFeatures.tar.gz and audiowav.tar.gz
+Argument: set(train or test) , normal or whisper
 
 #### duration.py
 Calculate the duration of the audio
@@ -74,11 +54,16 @@ Argument:
 - entire.vec: a file containing all after-pca features
 - output.list: a file containing the output path corresponding to the entire.vec
 
-### finalizeFeat.sh
-Duplicate each feature by four times to match the frames of video and audio. Also take care of extra or missing frames.
-Argument: N/A
+### demo_wav_frame.sh
+Extract wav file and frame from video files
 
+### demo_mouth.sh
+Extract ROI(mouth) from every frame
 
+### demo_feature.sh
+Extract 1024-dimension feature By CNN. This feature is degraded to 63-dim by pca
 
-
+### demo_ark.sh & demo_final.sh
+Converting to ark extension and arrange them along to wav directory
+Finally zipping to one file.
 
