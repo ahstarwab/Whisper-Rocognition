@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# Copyright: Junyi Wang
-
-# This script duplicates the video features by four times so the video frames could match audio frames
-# Since the audio has a sample rate slightly lower than 100FPS, there will be some extra frames.
-# The script will remove the extra frames. The script will also take care of video that does not match in duration
-
-# first generate for training
 data=$1
 sort=$2
 spk_num=$(find ./audio/$data/* -maxdepth 0 -type d | wc -l)

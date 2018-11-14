@@ -1,12 +1,10 @@
 # This will store the order of input
 sort=$1
+rm -r ./features
 mkdir -p ./features
-if [ ! -f ./features ]
-then
 for file in mouth/*;
         do
                 name=$(echo $file | cut -d "/" -f 2)
-		rm -rf ./features
                 mkdir -p ./features/$name
 		find `pwd`/mouth/$name -type f -exec echo {} \; | sort -V > ./features/$name/$name.list
 		# run the script and output to $name.vec
@@ -14,13 +12,12 @@ for file in mouth/*;
 		python featureExtract.py -i ./features/$name/$name.list -o ./features/$name/$name.vec
 		echo "Finish extracting features for $name."
         done
-fi
 
 if [ ! -f ./features/entire.vec ] || [ ! -f ./features/entire.list ]
 then
         touch ./features/entire.vec
         touch ./features/entire.list
-        spk_num=`printf "%02d" $(find ./features -type d | wc -l)`
+        spk_num=`printf "%02d" $(find ./features/* -maxdepth 0 -type d | wc -l)`
         for i in `seq 1 $spk_num`
         do
                spk=`printf "%02d" $i`

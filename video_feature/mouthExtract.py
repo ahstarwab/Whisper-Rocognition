@@ -15,7 +15,7 @@ import cv2
 import os
 import multiprocessing as mp
 
-TARGET_SIZE=60
+TARGET_SIZE=32
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-p", "--shape-predictor", required=True, help="path to pretrained facial landmark predicator")

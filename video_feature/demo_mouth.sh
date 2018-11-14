@@ -35,5 +35,6 @@ mkdir -p ./mouth
                       python mouthExtract.py -p ./shape_predictor_68_face_landmarks.dat -i $file5 -o $outdir &
                       python mouthExtract.py -p ./shape_predictor_68_face_landmarks.dat -i $file6 -o $outdir &
                       python mouthExtract.py -p ./shape_predictor_68_face_landmarks.dat -i $file7 -o $outdir
-                      echo "Finish Extrating mouth for $file"
+                      wait
+                      echo "Finish Extrating mouth for $spk"
 	done

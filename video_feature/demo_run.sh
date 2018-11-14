@@ -1,5 +1,5 @@
 #!/bin/bash
-
+date
 stage=0
 # --stage <stage> # 0:no skpping(default)
 #                 # 1:skip extractng wav and frame
@@ -44,5 +44,5 @@ if [ $stage -le 4 ]; then
     ./demo_final.sh $1 || exit 1
     echo "Stage 5 : converting binary ark files and zipping completes."
 fi
-
+date
 echo "All pre-process stage completes."
