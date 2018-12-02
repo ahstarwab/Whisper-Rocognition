@@ -1,0 +1,5 @@
+# .gitignore
+
+demo_gui/gui
+demo_gui/demoenv
+demo_kaldi
