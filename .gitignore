@@ -3,3 +3,13 @@
 demo_gui/gui
 demo_gui/demoenv
 demo_kaldi
+demo_feature/outputs
+demo_feature/video
+demo_feature/audio
+demo_feature/frame*
+demo_feature/features
+demo_feature/mouth
+demo_feature/final
+demo_feature/finalbin
+demo_feature/pca_info
+
