@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="image">
+    <file>gui/SIRI.mp4</file>
+    <file>gui/126505_adapted_1440x2960.jpg</file>
+    <file>gui/126505_adapted_1440x2960123.jpg</file>
+    <file>gui/126505_adapted_1440x29601213.jpg</file>
+    <file>gui/124142424.jpg</file>
+    <file>gui/20181201032326.png</file>
+    <file>gui/bgi.qrc</file>
+    <file>gui/siri_icon_logo.jpg</file>
+    <file>gui/siri-logo-1100x512.jpg</file>
+    <file>gui/제목 없음-1.jpg</file>
+  </qresource>
+</RCC>
